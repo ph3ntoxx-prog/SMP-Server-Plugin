@@ -1,0 +1,91 @@
+name: LegacyCraft
+version: '1.21.10 - 1.0'
+main: de.simon.legacyCraft.Main
+api-version: '1.21'
+author: Simon Holzinger
+commands:
+  specialattack:
+    description: Test
+    usage: /specialattack
+    permission: special.use
+    permission-message: Du hast keine Rechte diesen Command zu benutzen!
+  explodeattack:
+    description: Test
+    usage: /explodeattack
+    permission: explode.use
+    permission-message: Du hast keine Rechte diesen Command zu benutzen!
+  spawnboss:
+    description: Test
+    usage: /spawnboss
+    permission: boss.spawn
+    permission-message: Du hast keine Rechte diesen Command zu benutzen!
+  countdown:
+    description: Startet einen Countdown
+    usage: /countdown <title> <d> <h> <m> <s>
+    permission: countdown.use
+  commands:
+    description: Zeigt eine Liste der verfügbaren Commands an
+    usage: /commands
+  regg:
+      description: Resettet dass ein Spieler das Drachenei bereits hatte
+      usage: /regg
+      permission: op
+  status:
+      description: Setze deinen Status
+      usage: /status <StatusName> <Farbe>
+      arguments:
+      permission: status.use
+      permission-message: Du hast keine Rechte diesen Command zu benutzen!
+  tpsbar:
+    description: Zeigt eine TPSBar an
+    usage: /tpsbar
+    permission: tpsbar.use
+    permission-message: Du hast keine Rechte diesen Command zu benutzen!
+  spy:
+    description: Zeigt die letzten Aktionen an einem Block oder einem Container
+    usage: /spy
+    permission: protect.spy
+    permission-message: Du hast keine Rechte diesen Command zu benutzen!
+  nether:
+    description: Öffnet oder schließt den Nether
+    usage: /nether <open|close>
+  invsee:
+    description: Sieh das Inventar eines anderen Spielers
+    usage: /invsee <Spieler>
+  endersee:
+    description: Enderchest eines Spielers ansehen
+  nickname:
+    description: Setzt einen Chat-Nickname
+  vanish:
+    description: Setzt den Spieler in einen Vanish
+  ban:
+    description: Bannt einen Spieler
+  unban:
+    description: entbannt einen Spieler
+permissions:
+  countdown.use:
+    description: Erlaubt das Nutzen des Countdowns
+    default: op
+  status.use:
+    default: true
+  tpsbar.toggle:
+    description: Erlaubt das Toggeln der TPS Bar mit /tpsbar
+    default: true
+  protect.spy:
+    description: Erlaubt das Benutzen des /spy Commands
+    default: op
+  boss.spawn:
+    description: Erlaubt das Benutzen des /spawnboss Commands
+    default: op
+  explode.use:
+    description: Erlaubt das Benutzen des /explodeattack Commands
+    default: op
+  special.use:
+    description: Erlaubt das Benutzen des /specialattack Commands
+    default: op
+  invsee.use:
+    description: Erlaubt das Anschauen fremder Inventare
+    default: op
+  endersee.use:
+    description: Erlaubt das Anschauen fremder Enderchests
+    default: op

@@ -1,0 +1,33 @@
+#Spawnelytra Config, Spawnradius und Boostmultiplier
+spawnRadius: 50
+multiplyValue: 5
+boostEnabled: true
+world: world
+
+#Status Config, gebannte Wörter und gespeicherte Status
+banned-words:
+  - ghg
+  - hitler
+  - nigga
+  - neger
+  - nega
+  - negga
+  - negger
+  - niga
+  - nege
+  - negge
+  - adolf
+  - hitla
+  - adolff
+  - hittla
+  - hittler
+  - nigger
+  - 787
+  - 88
+  - nig
+  - ger
+  - nig-ger
+  - heil
+  - hilter
+
+statuses:
